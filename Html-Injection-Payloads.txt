@@ -34,12 +34,6 @@ UEdneFBraFVUVXc4TDJneFBnPT0=
 <<h1>HTML</h1>>
 <<h1>html</h1>>
 %253Ch1%253EHTML%253C%252Fh1%253E<h1>Html</h1>
-<h1>html</h1>
-<h2>Html</h2>
-<h3>Html</h3>
-<h4>Html</h4>
-<h5>Html</h5>
-<h6>HTML</h6>
 <pre>HTML</pre>
 <p>HTMLinjection here</p>
 <i>HTML</i>
