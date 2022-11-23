@@ -421,3 +421,6 @@ $(`whoami`)
 {1} + {1}
 {% For c in [1,2,3]%} {{c, c, c}} {% endfor%}
 {{[] .__ Class __.__ base __.__ subclasses __ ()}}
+somedir \x1a whoami
+\! whoami
+word " c:\\where\\ || dir || '
