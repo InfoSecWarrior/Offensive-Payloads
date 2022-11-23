@@ -14,6 +14,12 @@
 %0Aid
 %0a id %0a
 %0Aid%0A
+!whoami!
+%whoami%
+!%whoami
+%!whoami
+%!whoami!%
+!%whoami%!
 %0a ping -i 30 127.0.0.1 %0a
 %0A/usr/bin/id
 %0A/usr/bin/id%0A
@@ -415,3 +421,6 @@ $(`whoami`)
 {1} + {1}
 {% For c in [1,2,3]%} {{c, c, c}} {% endfor%}
 {{[] .__ Class __.__ base __.__ subclasses __ ()}}
+somedir \x1a whoami
+\! whoami
+word " c:\\where\\ || dir || '
