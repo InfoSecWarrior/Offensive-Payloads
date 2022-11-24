@@ -65,6 +65,7 @@ a|/usr/bin/id
 `ping 127.0.0.1`
 -c 10 127.0.0.1
 -c 10 google.com
+||ping -c 10 127.0.0.1||
 | id
 & id
 ; id
