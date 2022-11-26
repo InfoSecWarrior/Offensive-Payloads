@@ -16,6 +16,10 @@
 |id;
 ||/usr/bin/id;
 ;id|
+!id!
+%id%
+!id
+%id
 ;|/usr/bin/id|
 \n/bin/ls -al\n
 \n/usr/bin/id\n
