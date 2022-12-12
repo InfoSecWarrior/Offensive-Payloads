@@ -36,3 +36,5 @@ file:///etc/passwd
 file://\/\/etc/passwd
 http://brutelogic.com.br/poc.svg
 127。0。0。1
+http://127.0.0.1/%2561dmin
+http://127.1/%2561dmin
