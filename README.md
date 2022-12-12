@@ -14,8 +14,10 @@ This repository is a collection of payloads and wordlists that can be used for p
   - [SQL Injection Authentication Bypass](SQL-Injection-Auth-Bypass-Payloads.txt)
   - [File Extensions](File-Extensions-Wordlist.txt)
   - [Media Type (MIME)](Media-Type-(MIME).txt)
+  - [Server Side Request Forgery (SSRF)](Server-Side-Request-Forgery-Payloads.txt)
 
 ### References
 
   - [SecLists](https://github.com/danielmiessler/SecLists)
   - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
+  - [Owasp](https://owasp.org/)
