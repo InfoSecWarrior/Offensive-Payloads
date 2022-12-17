@@ -566,3 +566,7 @@
 .zip
 .Zip
 .ZIP
+.phar
+.php7
+.pht
+.phP
