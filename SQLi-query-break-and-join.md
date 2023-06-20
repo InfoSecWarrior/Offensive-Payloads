@@ -20,6 +20,10 @@
 `))
 Wildcard (*)
 &apos;  # required for XML content
+'/*
+'/\*
+';--
+*/
 ```
 
 
