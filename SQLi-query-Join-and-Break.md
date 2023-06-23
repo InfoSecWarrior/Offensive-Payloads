@@ -1,7 +1,7 @@
 <h1 align='center'> Query Break</h1>
 
 ```sql
- [Nothing]
+
 '
 %27
 "
