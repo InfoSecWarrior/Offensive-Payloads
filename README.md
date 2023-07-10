@@ -5,16 +5,21 @@ This repository is a collection of payloads and wordlists that can be used for p
 ### Following are the list of payloads and wordlists :
 
   - [Cross Site Scripting (XSS)](Cross-Site-Scripting-XSS-Payloads.txt)
+  - [Directory Traversal Payloads](Directory-Traversal-Payloads.txt)
+  - [File Extensions Wordlist](File-Extensions-Wordlist.txt)
   - [HTML Injection](Html-Injection-Payloads.txt)
   - [Html Injection File Read](Html-Injection-Read-File-Payloads.txt)
+  - [Linux Sensitive Files](Linux-Sensitive-Files.txt)
+  - [Media Type (MIME)](Media-Type-(MIME).txt)
   - [OS Command Injection (Unix)](OS-Command-Injection-Unix-Payloads.txt)
   - [OS Command Injection (Windows)](OS-Command-Injection-Windows-Payloads.txt)
-  - [PHP Code Injection](PHP-Code-Injections-Payloads.txt)
+  - [PHP Code Injection-Payloads](PHP-Code-Injections-Payloads.txt)
+  - [PHP Code injection](PHP-Code-injection.txt)
   - [SQL Injection](SQL-Injection-Payloads.txt)
   - [SQL Injection Authentication Bypass](SQL-Injection-Auth-Bypass-Payloads.txt)
-  - [File Extensions](File-Extensions-Wordlist.txt)
-  - [Media Type (MIME)](Media-Type-(MIME).txt)
+  - [SQLi Query Join and Break](SQLi-query-Join-and-Break.md)
   - [Server Side Request Forgery (SSRF)](Server-Side-Request-Forgery-Payloads.txt)
+  - [Windows Sensitive Files](Windows-Sensitive-Files.txt)
   - [XML External Entity (XXE)](XML-External-Entity-(XXE)-Payloads.txt)
 
 ### References
