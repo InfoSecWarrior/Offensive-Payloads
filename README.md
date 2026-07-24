@@ -24,6 +24,7 @@ This repository is a collection of payloads and wordlists that can be used for p
 
 ### References
 
+  - [Darkmoon](https://github.com/ASCIT31/Dark-Moon) - Open source (GPL-3.0) autonomous AI penetration testing platform covering web, API, Active Directory and Kubernetes, orchestrating 80+ offensive tools as an MCP host with proof of exploitation and a local privacy gateway (the LLM never sees real IPs or credentials).
   - [SecLists](https://github.com/danielmiessler/SecLists)
   - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
   - [Owasp](https://owasp.org/)
